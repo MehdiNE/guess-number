@@ -11,7 +11,7 @@ document.querySelector('.guess').value = 23;
 console.log(document.querySelector('.guess').value);
 */
 console.log('welcome to the application');
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 50) + 1;
 let score = 20;
 let highscore = 0;
 
@@ -60,7 +60,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  secretNumber = Math.trunc(Math.random() * 50) + 1;
 
   document.querySelector('.message').textContent = 'start guessing...';
   document.querySelector('.score').textContent = score;
